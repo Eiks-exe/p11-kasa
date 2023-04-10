@@ -1,0 +1,13 @@
+#container {
+    width: 100%;
+    min-width: 335px;
+    padding: 0 0 0 0;
+    border-radius: 10px;
+    background: #F7F7F7;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(335px, 3fr));
+    grid-gap: 1rem;
+    place-items: center;
+}
+

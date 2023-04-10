@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    width: 100%;
+    min-width: 335px;
+    text-align: center;
+    align-items: center ;
+    justify-content: space-between;
+    margin: 0 0 24px 0;
+}
+
+.hstack {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #FF6060;
+    font-size: 18px;
+    line-height: 142.6%;
+    gap: 1rem;
+}
+
+
+a {
+    text-decoration: none;
+       
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: inherit;
+}

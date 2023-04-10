@@ -1,0 +1,28 @@
+$color-gray-800: #1A202C;
+$color-gray-200: #E2E8F0;
+
+#banner {
+    height: 111px;
+    width: 100%;
+    min-width: 335px;
+    border-radius: 25px;
+    margin-bottom: 16px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bannerBg {
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+#title-wrapper {
+    width: 50%;
+    min-width: 200px;
+    font-size: 24px;
+    text-align: left;
+    white-space:break-spaces;
+}
