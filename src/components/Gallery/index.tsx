@@ -25,7 +25,7 @@ const Gallery = (props: Props) => {
   return (
     <div id='container'>
      {props.data?.filter( (item:ILogement)=> item.title.toLowerCase()).map((item:ILogement)=> (
-        <GalleryCard item={item}/>
+        <GalleryCard key={item.id} item={item}/>
      ))}
     </div>
   )

@@ -1,0 +1,15 @@
+$primary-color :  #FF6060;
+
+.collapsible {
+    margin: 0 0 20px 0;
+        button {
+            width: 100%;
+            min-width: 335px;
+            background-color: $primary-color;
+            height: 30px;
+            border: none;
+            color: white;
+            font-size: 13px;
+            border-radius: 8px;
+        }
+}

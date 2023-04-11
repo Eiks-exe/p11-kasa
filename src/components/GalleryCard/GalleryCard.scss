@@ -27,3 +27,9 @@
     height: 255px;
     max-height: 255;
 }
+
+.btn-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

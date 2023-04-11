@@ -1,3 +1,4 @@
+$primary-color :  #FF6060;
 header{
     display: flex;
     width: 100%;
@@ -21,7 +22,7 @@ header{
 
 a {
     text-decoration: none;
-       
+    color: $primary-color;
 }
 
 a:hover{
@@ -29,5 +30,5 @@ a:hover{
 }
 
 a:visited{
-    color: inherit;
+    color: $primary-color;
 }

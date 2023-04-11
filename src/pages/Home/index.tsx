@@ -20,7 +20,6 @@ export function Homepage(props: IHomepageProps) {
 		fetch(url)
 			.then(response => response.json())
 			.then(data => setLogements(data));
-			
 	}, [])
 	return (
 		<>
