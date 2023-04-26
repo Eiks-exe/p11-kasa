@@ -53,7 +53,7 @@ const AppCaroussel = ({images, imageFormat}: Props) => {
                     <button
                         type="button"
                         className="app_carousel_arrow_button"
-                        style={{ left: '2%' }}
+                        style={{ left: '6%' }}
                         aria-label="Previous"
                         onClick={() => changeImage('previous')}
                     >
@@ -61,13 +61,15 @@ const AppCaroussel = ({images, imageFormat}: Props) => {
                             style={{
                                 transform: 'rotate(180deg)',
                             }}
-                            color={'white'}
+                            color={'black'}
                         />
                     </button>
                     <button
                         type="button"
                         className="app_carousel_arrow_button"
-                        style={{ right: '2%' }}
+                        style={{ 
+                            right: '7%' ,
+                        }}
                         aria-label="Next"
                         onClick={() => changeImage('next')}
                     >

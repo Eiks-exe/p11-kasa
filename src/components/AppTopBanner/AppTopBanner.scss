@@ -2,16 +2,22 @@ $color-gray-800: #1A202C;
 $color-gray-200: #E2E8F0;
 
 #banner {
-    height: 111px;
+    min-height: 111px;
+    max-height: 223px;
     width: 100%;
+    //padding-top: 5% ;
     min-width: 335px;
     border-radius: 25px;
-    margin-bottom: 16px;
+    margin-bottom: 43px;
     color: white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (min-width: 600px) {
+        height: 223px;
+    }
+
 }
 
 #bannerBg {
@@ -25,4 +31,12 @@ $color-gray-200: #E2E8F0;
     font-size: 24px;
     text-align: left;
     white-space:break-spaces;
+    @media (min-width: 600px) {
+        text-align: center;
+        font-size: 38px;
+    }
+    @media (min-width: 1200px) {
+        text-align: center;
+        font-size: 48px;
+    }
 }

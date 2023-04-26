@@ -7,13 +7,16 @@ export interface IAppHeaderProps {
 
 export interface IconLogoProps {
    id : string
+   color?: string
+   style?:React.CSSProperties
 }
 
 
-const IconLogo= (props: IconLogoProps) => {
+export const IconLogo= ({id, color, style}: IconLogoProps) => {
+    const className :string = "svg-"+color
     return (
         <>
-            <img src={Logo} alt="kasa" id={props.id}/>
+            <img src={Logo} alt="kasa" id={id} color={color} style={style} className={className}/>
         </>
     )
 }

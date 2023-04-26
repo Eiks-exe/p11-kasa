@@ -7,7 +7,7 @@ type Props = {
 
 const IconChevronRight = (props: Props) => {
   return (
-   <img src={ChevronIcon} alt="#" style={props.style} color={props.color}/>
+   <img src={ChevronIcon} alt="#" style={props.style} color={props.color} className='carousel-arrowImg'/>
   )
 }
 

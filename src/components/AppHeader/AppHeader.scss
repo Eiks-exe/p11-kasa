@@ -8,7 +8,9 @@ header{
     justify-content: space-between;
     margin: 0 0 24px 0;
 }
-
+.svg-white path{
+    fill:white
+}
 .hstack {
     display: flex;
     align-items: center;

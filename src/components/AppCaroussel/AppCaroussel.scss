@@ -1,6 +1,48 @@
-#carousel{
+#carousel {
     border-radius: 10px;
-        img {
-            border-radius: 10px;
+    width: 100%;
+    min-width: 335px;
+
+    img {
+        object-fit: cover;
+        border-radius: 10px;
+        height: 255px;
+
+        @media (min-width: 800px) {
+            height: 415px !important;
         }
+    }
+}
+
+.app_carousel_arrow_button {
+    position: absolute;
+    top: 220px;
+    transform: translate(0%, -50%);
+    border: none;
+    background-color: transparent;
+    border: none;
+
+    img {
+        width: 11, 67px !important;
+        height: 19.8px !important;
+    }
+
+    @media (min-width: 800px) {
+        img {
+            width: 11, 67px !important;
+            max-height: 79px !important;
+        }
+
+        width: 48px;
+        height: 80px;
+        transform: translate(0%, -50%);
+        position: absolute;
+        top: 280px;
+    }
+}
+
+.navcarousel-arrowImg {
+    width: 46px;
+    height: 79px;
+    background-color: aqua;
 }

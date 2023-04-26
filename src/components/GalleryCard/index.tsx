@@ -12,17 +12,20 @@ type Props = {
 const GalleryCard = (props: Props) => {
     const navigate = useNavigate()
     return (
-        <div 
-            id={`card-${props.item.id}`} 
-            className='gallery-item'
-            style={{
-                background: `url(${props.item.cover}) center`,
-                backgroundSize: "cover"
-            }} 
-            onClick={()=>navigate(`/house/${props.item.id}`)}
-        >
-            <div className="card-text">
-                <span>{props.item.title}</span>
+        <div className="cardContainer">
+            <div
+                id={`card-${props.item.id}`}
+                className='gallery-item'
+                style={{
+                    background: `url(${props.item.cover}) center`,
+                    backgroundSize: "cover"
+                }}
+                onClick={() => navigate(`/house/${props.item.id}`)}
+            >
+                <div className="cover"></div>
+                <div className="card-text">
+                    <span>{props.item.title}</span>
+                </div>
             </div>
         </div>
     )
