@@ -1,0 +1,15 @@
+.collapsable-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .collapsable-description{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 142.6%;
+        color: #FF6060;
+    }
+    @media (min-width: 800px) {
+        height: 50vh;
+    }
+}

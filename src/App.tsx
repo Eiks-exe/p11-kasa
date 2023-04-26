@@ -3,6 +3,7 @@ import './App.scss';
 import { Homepage } from './pages/Home';
 import HousePage from './pages/House';
 import NotFoundPage from './pages/NotFound';
+import AboutPage from './pages/About';
 
 
 export const App = (): JSX.Element => (
@@ -11,6 +12,7 @@ export const App = (): JSX.Element => (
       <Route path="/" element= {<Homepage/>}/>
       <Route path='/house/:id' element= {<HousePage />}/>
       <Route path="*" element= {<NotFoundPage/>}/>
+      <Route path="/about" element={<AboutPage/>}/>
     </Routes>
   </BrowserRouter>
 );

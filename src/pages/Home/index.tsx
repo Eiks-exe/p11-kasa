@@ -26,7 +26,7 @@ export function Homepage(props: IHomepageProps) {
 			<AppContainer>
 				<div>
 					<AppTopBanner
-						img='/pictures/mountains.png'
+						img='/pictures/sealand.png'
 						imageFormat={{ w: "100%", h: "111px" }}
 						title='Chez vous, partout et ailleurs'
 					/>

@@ -4,6 +4,7 @@ interface IBannerProps {
   title?:string
   img?: string
   imageFormat?: { w?: string; h?: string };
+  className?: string
 }
 
 const   AppTopBanner  = (props: IBannerProps) => {
@@ -11,9 +12,9 @@ const   AppTopBanner  = (props: IBannerProps) => {
     <div id="banner" style={{
       background: `url(${props.img}) center`,
       backgroundSize: "cover"
-    }}>
+    }} className={props.className}>
       <div id="title-wrapper">
-        <span id="title">{props.title}</span>
+        <span id="banner-title">{props.title}</span>
       </div>
     </div>
   )

@@ -4,11 +4,13 @@ import IconChevronRight from '../Icons/IconChevronRight'
 type Props = {
   description: string[]
   name?: string
-  type?: "list" | "description"
+  type?: "list" | "description",
+  className?:string
+  style?: React.CSSProperties
 }
 
 
-const Collapsable = ({ description, name, type="description" }: Props) => {
+const Collapsable = ({ description, name, type="description" , style}: Props) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   function toggleCollapsed() {
@@ -17,7 +19,7 @@ const Collapsable = ({ description, name, type="description" }: Props) => {
 
   //TODO change description to content 
   return (
-    <div className="collapsible">
+    <div className={"collapsible"} style={style}>
       <button className="collapsible-btn" onClick={toggleCollapsed}>
         {isCollapsed ? <div className='btn-content'><p>{name}</p><IconChevronRight color='white' style={{
           width: "16px",

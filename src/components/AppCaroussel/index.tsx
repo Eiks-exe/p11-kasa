@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import IconChevronRight from '../Icons/IconChevronRight';
 import "./AppCaroussel.scss"
+
 type Props = {
     images: string[]
     imageFormat?: { w?: string; h?: string };
@@ -12,12 +13,12 @@ const AppCaroussel = ({images, imageFormat}: Props) => {
 
     const changeImage = (direction: "next"|"previous") => {
         if(direction === "next") {
-            setCurrentImage(currentImage -1 >=0 ? currentImage - 1: images.length-1)
+            setCurrentImage(currentImage +1 >= images.length ? images.length - currentImage-1 : currentImage+1)
             imageRef.current?.classList.remove('carousel-image-animate');
             void imageRef.current?.offsetWidth;
             imageRef.current?.classList.add('carousel-image-animate');
         } else {
-            setCurrentImage(currentImage - 1 >= 0 ? currentImage - 1 : images.length - 1);
+            setCurrentImage(currentImage - 1 >= 0 ? currentImage - 1 : images.length-1);
 
             //CSS Trick to re-animate the image
             imageRef.current?.classList.remove('carousel-image-animate');
@@ -82,6 +83,8 @@ const AppCaroussel = ({images, imageFormat}: Props) => {
                     </button>
                 </>
             )}
+            {currentImage 
+            +1}/{images.length}
         </div>
     )
 }
