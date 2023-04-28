@@ -25,7 +25,7 @@ const AboutPage = (props: Props) => {
         <AppTopBanner img="/pictures/mountains.png" className='AboutBanner'></AppTopBanner>
         <div className="collapsable-container">
             {aboutData.map((item)=>(
-            <Collapsable name={item.name} description={[item.description]}/>
+            <Collapsable key={item.name} name={item.name} description={[item.description]}/>
             ))}
         </div>
     </AppContainer>
