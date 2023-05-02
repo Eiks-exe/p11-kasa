@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    height: 500px;
+
     .collapsable-description{
         font-size: 24px;
         font-weight: 400;
@@ -10,6 +12,7 @@
         color: #FF6060;
     }
     @media (min-width: 800px) {
-        height: 50vh;
+        height: 300px;
     }
+    
 }

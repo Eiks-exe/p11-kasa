@@ -58,8 +58,8 @@ const HousePage = (props: Props) => {
                     </div>
                 </div>
                 <div className="house-description">
-                    <Collapsable name='descripton' description={[currentHouse?.description ? currentHouse?.description : ""]} />
-                    <Collapsable name='equipement' type="list" description={currentHouse?.equipments ? currentHouse?.equipments : []} />
+                    <Collapsable name='descripton' description={[currentHouse?.description ? currentHouse?.description : ""]} className='collapsible' />
+                    <Collapsable name='equipement' type="list" description={currentHouse?.equipments ? currentHouse?.equipments : [] }  className='collapsible'/>
                 </div>
             </AppContainer>
 

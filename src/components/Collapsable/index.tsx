@@ -10,7 +10,7 @@ type Props = {
 }
 
 
-const Collapsable = ({ description, name, type="description" , style}: Props) => {
+const Collapsable = ({ description, name, type="description" , style, className }: Props) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   function toggleCollapsed() {
@@ -19,20 +19,23 @@ const Collapsable = ({ description, name, type="description" , style}: Props) =>
 
   //TODO change description to content 
   return (
-    <div className={"collapsible"} style={style}>
+    <div className={className} style={style}>
       <button className="collapsible-btn" onClick={toggleCollapsed}>
         {isCollapsed ? <div className='btn-content'><p>{name}</p><IconChevronRight color='white' style={{
           width: "16px",
           transform: 'rotate(90deg)',
           marginRight:"20px",
           marginBottom:"3px"
-
-        }} /></div> : <div className='btn-content'><p>{name}</p><IconChevronRight color='white' style={{
+        }} 
+        className='arrow-chevron'
+        /></div> : <div className='btn-content'><p>{name}</p><IconChevronRight color='white' style={{
           width: "16px",
           transform: 'rotate(-90deg)',
           marginRight:"20px",
           marginBottom:"3px"
-        }} /></div>}
+        }} 
+        className='arrow-chevron'
+        /></div>}
       </button>
       {!isCollapsed && (
         <div className="collapsible-content">
